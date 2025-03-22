@@ -1,0 +1,126 @@
+/* Reset some default styling */
+* {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #d49321;
+    --blue: #4A90E2;
+    --off-white: #F7F7F7;
+    --brown: #854836;
+    --off-black: #333;
+    --space-blue: #232741;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    /* background-color: var(--blue); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    /* color: #854836; */
+}
+
+/* Header Section */
+header {
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #C1D8C3; */
+    background-color: var(--off-white);
+
+}
+
+.footer-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 28%;
+    margin: 1px;
+    object-fit: cover;
+}
+
+.footer-img:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--off-black);
+}
+
+/* Main Section */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: var(--off-white);
+
+    /* background-color: #ffbc2cc0; */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.bio, .skills, .contact {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    /* padding: 7px;
+    background-color: transparent; */
+    /* background-color: var(--off-black); */
+    /* color: white;
+    margin-top: auto; */
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+    .footer-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    h1 {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+}

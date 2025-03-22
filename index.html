@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Shikshaa Subramani</title>
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/cards.css">
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.2.3/src/wordcloud2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/scripts/cardToggle.js"></script>
 </head>
 <body>
+    <div id="particles-js"></div>
+
     <header>
         <div class="container">
-            <!-- <img src="your-photo.jpg" alt="Your Photo" class="profile-img"> -->
             <h1>Shikshaa Subramani</h1>
             <p>Digital Services | Full Stack Developer | Cloud Architecture | AWS | Python | Snowflake Data Cloud</p>
         </div>
@@ -17,25 +22,46 @@
     <main class="container">
         <section class="bio">
             <h2>About Me</h2>
-            <p>Hello! I’m a passionate web developer who loves creating responsive and dynamic web applications. I enjoy solving problems and continuously learning new technologies.</p>
-        </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript & React</li>
-                <li>Node.js & Express</li>
-                <li>UI/UX Design</li>
-            </ul>
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">your-profile</a></p>
-        </section>
+            <p>Hello! I love to work in a highly dynamic environment and scale up in a
+                technical aspect. I have developed multiple full stack applications and data
+                pipelines that serve a wide range of business needs.
+                I have worked with cross functional teams and have led development
+                projects to completion. I have also managed people and helped cultivate
+                talent to increase my team’s performance.</p>
+        </section>      
+          <!-- Horizontal Scrollable Cards -->
+          <section class="card-container">
+            <!-- <h2>My Projects</h2> -->
+            <div class="cards">
+              <div class="card">
+                <h3>Programming</h3>
+                <div id="wordcloud1" class="wordcloud"></div>
+              </div>
+              <div class="card">
+                <h3>Data Engineering</h3>
+                <div id="wordcloud2" class="wordcloud"></div>                
+              </div>
+              <div class="card">
+                <h3>DevOps</h3>
+                <div id="wordcloud3" class="wordcloud"></div>                
+              </div>
+              <div class="card">
+                <h3>Other Tools</h3>
+                <div id="wordcloud4" class="wordcloud"></div>
+              </div>
+            </div>
+          </section>
     </main>
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>
+            <a href="https://www.linkedin.com/in/shikshaa-subramani/" target="_blank">
+                <img src="assets/images/linkedin_logo.jpeg" alt="linkedin" class="footer-img">
+            </a>
+            <a href="mailto:shikshaa2497@gmail.com" target="_blank">
+                <img src="assets/images/gmail.jpg" alt="gmail" class="footer-img">
+            </a>
+            
+        </p>
     </footer>
 </body>
 </html>
